@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        System.out.println("= Jôkenpô =");
+        System.out.println("= Jokenpô =");
         Scanner teclado = new Scanner(System.in);
         System.out.println("Escolha sua jogada:");
-        System.out.println("[1]PEDRA\n[2]PAPEL\n[3]TESOURRA");
+        System.out.println("[1]PEDRA\n[2]PAPEL\n[3]TESOURA");
 
         try {
             byte jogoUser = teclado.nextByte();
@@ -33,7 +33,7 @@ public class Principal {
                 System.out.println("Pedra vence a tesoura! Você ganhou!");
             } else if ((jogoUser == 2) && (jogoPC == 1)) {
                 System.out.println("O computador escolheu Pedra");
-                System.out.println("Papel vence a pedra!Você ganhou!");
+                System.out.println("Papel vence a pedra! Você ganhou!");
             } else if ((jogoUser == 2) && (jogoPC == 3)) {
                 System.out.println("O computador escolheu: Tesoura");
                 System.out.println("Tesoura vence o papel! Você perdeu!");
